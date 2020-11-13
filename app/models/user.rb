@@ -5,6 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_one_attached :profile
-
+  has_many :teams, dependent: :destroy
   enum status: ["searching_employee", "searching_job", "currently_working", "None_of_them"]
 end
