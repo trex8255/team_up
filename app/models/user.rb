@@ -6,5 +6,7 @@ class User < ApplicationRecord
 
   has_one_attached :profile
   has_many :teams, dependent: :destroy
-  enum status: ["searching_employee", "searching_job", "currently_working", "None_of_them"]
+  enum status: ["searching_employee", "searching_job", "currently_working", "None_of_them"], _suffix: true
+  enum region: ["Tokyo", "LA", "Busan", "Cheetos", "Lalaland"], _suffix: true
+  enum role: ["etc", "planner", "designer", "developer"], _suffix: true
 end

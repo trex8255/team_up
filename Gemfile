@@ -16,7 +16,7 @@ gem "devise"
 gem "activeadmin"
 gem "bootstrap" 
 gem "jquery-rails"
-
+gem 'acts-as-taggable-on', '~> 6.0'
 
 
 group :production do

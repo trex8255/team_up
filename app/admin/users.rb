@@ -18,9 +18,9 @@ ActiveAdmin.register User do
   filter :email
 
   scope :all, default: true
-  scope :searching_employee
-  scope :searching_job
-  scope :currently_working
-  scope :None_of_them
+  scope :searching_employee_status
+  scope :searching_job_status
+  scope :currently_working_status
+  scope :None_of_them_status
 
 end
