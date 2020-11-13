@@ -6,5 +6,5 @@ class User < ApplicationRecord
 
   has_one_attached :profile
 
-  enum status: ["searching_employee", "searching_job", "currently_working", "N/A"]
+  enum status: ["searching_employee", "searching_job", "currently_working", "None_of_them"]
 end
