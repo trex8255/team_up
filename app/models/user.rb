@@ -9,4 +9,6 @@ class User < ApplicationRecord
   enum status: ["searching_employee", "searching_job", "currently_working", "None_of_them"], _suffix: true
   enum region: ["Tokyo", "LA", "Busan", "Cheetos", "Lalaland"], _suffix: true
   enum role: ["etc", "planner", "designer", "developer"], _suffix: true
+
+  acts_as_taggable_on :details
 end

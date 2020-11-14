@@ -31,6 +31,36 @@
     <%= f.password_field :current_password, autocomplete: "current-password" %>
   </div>
 
+    <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :profile %><br />
+    <%= f.file_field :profile %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.select :status, User.statuses.keys %>
+  </div>
+    <div class="field">
+    <%= f.label :region %><br />
+    <%= f.select :region, User.regions.keys %>
+  </div>
+
+      <div class="field">
+    <%= f.label :career %><br />
+    <%= f.number_field :career, max: 10, min: 0%>
+  </div>
+      <div class="field">
+    <%= f.label :role %><br />
+    <%= f.select :role, User.roles.keys %>
+  </div>
+
+  <div class="field">
+  <%=f.label :detail_list%><br/>
+  <%=f.text_area :detail_list%>
+</div>
   <div class="actions">
     <%= f.submit "Update" %>
   </div>

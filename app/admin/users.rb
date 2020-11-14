@@ -11,6 +11,9 @@ ActiveAdmin.register User do
       image_tag url_for(user.profile), class:"small_image"
     end
   end
+    column :name
+    column :status
+    column :detail_list
     actions
   end
 

@@ -16,7 +16,7 @@
   <tbody>
     <% @teams.each do |team| %>
       <tr>
-        <td><%= team.user %></td>
+        <td><%= team.user.name %></td>
         <td><%= team.name %></td>
         <td><%= team.short_desc %></td>
         <td><%= team.start_date %></td>
